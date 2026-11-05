@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12364a">
+  <meta name="description" content="Send an appointment or treatment enquiry to Dr Pharande Dental Clinic in Bhosari, Pune. WhatsApp +91 70286 57619.">
+  <meta property="og:title" content="Enquire | Dr Pharande Dental Clinic">
+  <meta property="og:description" content="Send an enquiry to Dr Pharande Dental Clinic in Bhosari, Pune.">
+  <meta property="og:image" content="assets/clinic-exterior.jpg">
+  <title>Enquire | Dr Pharande Dental Clinic</title>
+  <link rel="icon" href="assets/clinic-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="assets/config.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline">
+    <div class="container topline-inner">
+      <span><i class="status-dot"></i> Dental care in Bhosari, Pune</span>
+      <span class="topline-note">Appointments and enquiries</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Dr Pharande Dental Clinic home">
+        <img src="assets/clinic-mark.svg" alt="" width="46" height="46">
+        <span class="brand-copy"><strong>Dr Pharande's</strong><small>DENTAL CLINIC</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#care">Areas of care</a>
+        <a href="index.html#doctor">The doctor</a>
+        <a href="index.html#smiles">Smile gallery</a>
+        <a class="nav-cta" href="tel:+917028657619">Call clinic <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="enquiry-hero">
+      <div class="container enquiry-hero-grid">
+        <div class="reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> DR PHARANDE DENTAL CLINIC</p>
+          <h1>Let's start a<br><em>conversation.</em></h1>
+          <p>Have a question or want to request an appointment? Share a few details below. Your enquiry will be prepared as a WhatsApp message to the clinic.</p>
+        </div>
+        <div class="enquiry-callout reveal reveal-delay">
+          <small>CALL OR WHATSAPP THE CLINIC</small>
+          <strong><a href="tel:+917028657619">+91 70286 57619</a></strong>
+          <a href="https://wa.me/917028657619?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Dr%20Pharande%20Dental%20Clinic." target="_blank" rel="noopener">Open WhatsApp directly ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="enquiry-section">
+      <div class="container enquiry-layout">
+        <div class="enquiry-form-card reveal">
+          <p class="section-kicker">ENQUIRY FORM</p>
+          <h2>How can we help?</h2>
+          <p class="form-intro">Complete the form and continue to WhatsApp. Please check the message and tap Send to share it with the clinic.</p>
+
+          <form class="enquiry-form" id="enquiry-form">
+            <div class="form-field">
+              <label for="visitor-name">YOUR NAME *</label>
+              <input id="visitor-name" name="name" type="text" autocomplete="name" placeholder="Enter your full name" maxlength="80" required>
+            </div>
+            <div class="form-field">
+              <label for="visitor-phone">PHONE NUMBER *</label>
+              <input id="visitor-phone" name="phone" type="tel" autocomplete="tel" placeholder="Your contact number" minlength="8" maxlength="18" pattern="[0-9+()\-\s]{8,18}" required>
+            </div>
+            <div class="form-field">
+              <label for="visitor-email">EMAIL (OPTIONAL)</label>
+              <input id="visitor-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="120">
+            </div>
+            <div class="form-field">
+              <label for="enquiry-service">WHAT IS YOUR ENQUIRY ABOUT? *</label>
+              <select id="enquiry-service" name="service" required>
+                <option value="" selected disabled>Select an area</option>
+                <option>Dental implants</option>
+                <option>Gum / periodontal care</option>
+                <option>Dental surgery consultation</option>
+                <option>General dental consultation</option>
+                <option>Other enquiry</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="preferred-date">PREFERRED APPOINTMENT DATE (OPTIONAL)</label>
+              <input id="preferred-date" name="date" type="date">
+            </div>
+            <div class="form-field full">
+              <label for="visitor-message">YOUR MESSAGE (OPTIONAL)</label>
+              <textarea id="visitor-message" name="message" maxlength="700" placeholder="Briefly tell us what you would like to know or discuss."></textarea>
+            </div>
+            <div class="form-submit">
+              <button class="button button-whatsapp" type="submit">Continue to WhatsApp <span>↗</span></button>
+              <span class="form-submit-note">This form does not store or submit information to a website server. It opens WhatsApp with your enquiry details.</span>
+            </div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <a class="back-home" href="index.html">← Back to clinic website</a>
+        </div>
+
+        <aside class="enquiry-sidebar reveal reveal-delay">
+          <div class="sidebar-block">
+            <p class="sidebar-kicker">YOUR DENTAL PROFESSIONAL</p>
+            <h3>Dr. Shantanu Pharande</h3>
+            <p>BDS, MDS – Periodontics<br>Dental Surgeon · Implantologist · Periodontist</p>
+          </div>
+          <div class="sidebar-block">
+            <p class="sidebar-kicker">CLINIC LOCATION</p>
+            <h3>Dr Pharande's Dental Clinic</h3>
+            <p>Bhosari, Pune, Maharashtra, India</p>
+            <a class="back-home" href="https://www.google.com/maps/search/?api=1&query=Dr+Pharande%27s+Dental+Clinic%2C+Bhosari%2C+Pune" target="_blank" rel="noopener">Find the clinic on Maps ↗</a>
+          </div>
+          <div class="sidebar-block">
+            <p class="sidebar-kicker">PREFER TO CALL?</p>
+            <p>Speak to the clinic directly about appointment availability and timings.</p>
+            <a class="sidebar-phone" href="tel:+917028657619">+91 70286 57619</a>
+          </div>
+          <div class="enquiry-privacy"><strong>Privacy note:</strong> Share only the details needed for the clinic to respond. Avoid including sensitive medical records or confidential personal information in this enquiry form.</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="index.html"><img src="assets/clinic-mark.svg" alt="" width="42" height="42"><span class="brand-copy"><strong>Dr Pharande's</strong><small>DENTAL CLINIC</small></span></a>
+      <p>Thoughtful dental care in Bhosari, Pune.</p>
+      <a class="back-top" href="tel:+917028657619">Call +91 70286 57619</a>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Dr Pharande Dental Clinic. All rights reserved.</span><span>Designed for clear, confident care.</span></div>
+  </footer>
+</body>
+</html>
